@@ -1,0 +1,44 @@
+     
+  .BuildControls{
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0px;
+    }
+
+  .controls{
+    position: relative;
+    margin-left: 20px;
+    align-self: center;
+   /* padding-left: 30px; */
+  }
+  .BuildControls:nth-child(1) {
+    margin-left: 3px;
+    padding-left: 7px;
+  }
+  .BuildControls:nth-child(4n) {
+    margin-left: 2px;
+    padding-left: 8px;
+  }
+  
+   span {cursor:pointer; }
+	.minus, .plus{
+    margin-left: 8px;
+	  width:50px;
+	  height:40px;
+	  background:olive;
+    border-radius:4px;
+    justify-content: space-between;
+	  border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  button:disabled{
+    background-color:olivedrab;
+    color: purple;
+  }
+    .label{
+      padding-left: 70px;
+      text-emphasis: 1.2rem;
+      font-weight: bold;
+    }

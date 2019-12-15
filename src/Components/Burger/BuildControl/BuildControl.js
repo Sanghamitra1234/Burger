@@ -10,7 +10,7 @@ const controls=[
 ];
 
  const BuildControl=(props)=>{
-    console.log("pojp",props.ingredients,props.disabled);
+    //console.log("pojp",props.ingredients,props.disabled);
     
     return(
         <div className={styles.BuildControl}>

@@ -15,8 +15,9 @@ const OrderControl=(props)=>{
                     <ul>
                         {ingredientsList}
                     </ul>
+    `               <p><strong>Total Price : {props.price}</strong></p>
                 </div>
-                <button >Check out</button>
+                <button onClick={props.click}>Check out</button>
        
         </Auxilary>
     );

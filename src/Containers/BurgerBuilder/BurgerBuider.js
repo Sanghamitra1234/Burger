@@ -80,6 +80,9 @@ class BurgerBuilder extends Component{
         this.setState({purchaseModal:false});
         console.log("purchase",this.state.purchaseModal);
     }
+    checkoutHandler=()=>{
+        alert("Continue !!");
+    }
     render(){
         let disable={...this.state.ingredients};
         //console.log("updated in state",disable);
@@ -87,11 +90,11 @@ class BurgerBuilder extends Component{
             let t=disable[k]>=0;
             disable[k]=t;
         }
-        console.log("uho",disable);
+        //console.log("uho",disable);
         return(
             <Auxilary>
                 <Modal ing={this.state.ingredients} show={this.state.purchaseModal} clicked={this.purchaseRemoveHandler}>
-                    <OrderControl ing={this.state.ingredients} show={this.state.purchaseModal}/>
+                    <OrderControl ing={this.state.ingredients} show={this.state.purchaseModal} click={this.checkoutHandler} price={this.state.totalPrice}/>
                 </Modal>
                 <Burger ingredient={this.state.ingredients}/>
                 <BuildControl 
